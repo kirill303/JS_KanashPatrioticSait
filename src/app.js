@@ -1,8 +1,8 @@
 import { authWithEmailAndPassword, getAuthForm } from './auth';
-import { colors, ways } from './image_way';
+import { ways } from './image_way';
 import { Rewiew } from './rewiew';
 import './style.css';
-import submitMainForm from './utils';
+import submitMainForm, { colors } from './utils';
 
 function thisEnter(key) {
    if (key.keyCode === 13) {

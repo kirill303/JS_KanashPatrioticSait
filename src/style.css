@@ -122,6 +122,8 @@ body::-webkit-scrollbar {
    background-color:var(--colorBaseBack1) ;
    z-index: 15;
 }
+
+
 .modal__overlay{
    display: none;
    position: fixed;
@@ -130,6 +132,7 @@ body::-webkit-scrollbar {
    height: 100%;
    top: 0;
    left: 0;
+   opacity:0.6;
    background-color:var(--colorBase3);
 
 }
@@ -142,6 +145,10 @@ body::-webkit-scrollbar {
 .modal__text{
    overflow: scroll;
    height: 100%;
+}
+.modal__text::-webkit-scrollbar {
+   width: 0;
+   height: 0;
 }
 .modal__form{
    height: 100%;
@@ -158,7 +165,9 @@ body::-webkit-scrollbar {
 }
 #modal-submit{
    padding: 10px;
-   background-color: #888888;
+   background-color: var(--colorBase3);
+   font-weight: 600;
+   color: var(--fontColor);
 }
 .modal__password{
    margin-bottom: 10px;
